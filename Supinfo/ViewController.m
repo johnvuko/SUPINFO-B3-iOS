@@ -23,30 +23,42 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    label = [[UILabel alloc] initWithFrame:CGRectMake(0 ,0, CGRectGetWidth(self.view.frame), 30)];
-    label.center = self.view.center;
-    label.frame = CGRectMake(label.frame.origin.x, CGRectGetHeight(self.view.frame) / 3., label.frame.size.width, label.frame.size.height);
+    {
+        label = [[UILabel alloc] initWithFrame:CGRectMake(0 ,0, CGRectGetWidth(self.view.frame), 30)];
+        label.center = self.view.center;
+        label.frame = CGRectMake(label.frame.origin.x, CGRectGetHeight(self.view.frame) / 3., label.frame.size.width, label.frame.size.height);
+        
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = @"Hello, World";
+        
+        [self.view addSubview:label];
+    }
     
-    label.textAlignment = NSTextAlignmentCenter;
-    label.text = @"Hello, World";
+    {
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(label.frame) + 15, 200, 30)];
+        
+        textField.placeholder = @"Enter your name";
+        textField.delegate = self;
+        
+        [self.view addSubview:textField];
+    }
     
-    [self.view addSubview:label];
-    
-    
-    button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100., 40)];
-    button.center = self.view.center;
-    button.frame = CGRectMake(button.frame.origin.x, CGRectGetHeight(self.view.frame) - 100, button.frame.size.width, button.frame.size.height);
-    
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button setTitle:@"Press me" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(didButtonTouch) forControlEvents:UIControlEventTouchUpInside];
-    
-    // Bordure
-    button.layer.borderColor = [UIColor blueColor].CGColor;
-    button.layer.cornerRadius = 15.;
-    button.layer.borderWidth = 1.;
-    
-    [self.view addSubview:button];
+    {
+        button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100., 40)];
+        button.center = self.view.center;
+        button.frame = CGRectMake(button.frame.origin.x, CGRectGetHeight(self.view.frame) - 100, button.frame.size.width, button.frame.size.height);
+        
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitle:@"Press me" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(didButtonTouch) forControlEvents:UIControlEventTouchUpInside];
+        
+        // Bordure
+        button.layer.borderColor = [UIColor blueColor].CGColor;
+        button.layer.cornerRadius = 15.;
+        button.layer.borderWidth = 1.;
+        
+        [self.view addSubview:button];
+    }
 }
 
 - (void)didButtonTouch
@@ -57,6 +69,13 @@
     else{
         label.text = @"Hello, World";
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    label.text = [NSString stringWithFormat:@"Hello %@", textField.text];
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
