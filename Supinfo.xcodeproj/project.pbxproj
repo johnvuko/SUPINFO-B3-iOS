@@ -10,21 +10,9 @@
 		AB3811221A6D510F00B45532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811211A6D510F00B45532 /* main.m */; };
 		AB3811251A6D510F00B45532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811241A6D510F00B45532 /* AppDelegate.m */; };
 		AB3811281A6D510F00B45532 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811271A6D510F00B45532 /* ViewController.m */; };
-		AB38112B1A6D510F00B45532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3811291A6D510F00B45532 /* Main.storyboard */; };
 		AB38112D1A6D510F00B45532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB38112C1A6D510F00B45532 /* Images.xcassets */; };
 		AB3811301A6D510F00B45532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB38112E1A6D510F00B45532 /* LaunchScreen.xib */; };
-		AB38113C1A6D510F00B45532 /* SupinfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB38113B1A6D510F00B45532 /* SupinfoTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AB3811361A6D510F00B45532 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB3811141A6D510F00B45532 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB38111B1A6D510F00B45532;
-			remoteInfo = Supinfo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB38111C1A6D510F00B45532 /* Supinfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supinfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,23 +22,14 @@
 		AB3811241A6D510F00B45532 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AB3811261A6D510F00B45532 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AB3811271A6D510F00B45532 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AB38112A1A6D510F00B45532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB38112C1A6D510F00B45532 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB38112F1A6D510F00B45532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AB3811351A6D510F00B45532 /* SupinfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupinfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB38113A1A6D510F00B45532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB38113B1A6D510F00B45532 /* SupinfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupinfoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB3811191A6D510F00B45532 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB3811321A6D510F00B45532 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				AB38111C1A6D510F00B45532 /* Supinfo.app */,
-				AB3811351A6D510F00B45532 /* SupinfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +63,6 @@
 				AB3811241A6D510F00B45532 /* AppDelegate.m */,
 				AB3811261A6D510F00B45532 /* ViewController.h */,
 				AB3811271A6D510F00B45532 /* ViewController.m */,
-				AB3811291A6D510F00B45532 /* Main.storyboard */,
 				AB38112C1A6D510F00B45532 /* Images.xcassets */,
 				AB38112E1A6D510F00B45532 /* LaunchScreen.xib */,
 				AB38111F1A6D510F00B45532 /* Supporting Files */,
@@ -139,24 +116,6 @@
 			productReference = AB38111C1A6D510F00B45532 /* Supinfo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB3811341A6D510F00B45532 /* SupinfoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB3811421A6D510F00B45532 /* Build configuration list for PBXNativeTarget "SupinfoTests" */;
-			buildPhases = (
-				AB3811311A6D510F00B45532 /* Sources */,
-				AB3811321A6D510F00B45532 /* Frameworks */,
-				AB3811331A6D510F00B45532 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB3811371A6D510F00B45532 /* PBXTargetDependency */,
-			);
-			name = SupinfoTests;
-			productName = SupinfoTests;
-			productReference = AB3811351A6D510F00B45532 /* SupinfoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +127,6 @@
 				TargetAttributes = {
 					AB38111B1A6D510F00B45532 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					AB3811341A6D510F00B45532 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = AB38111B1A6D510F00B45532;
 					};
 				};
 			};
@@ -189,7 +144,6 @@
 			projectRoot = "";
 			targets = (
 				AB38111B1A6D510F00B45532 /* Supinfo */,
-				AB3811341A6D510F00B45532 /* SupinfoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +153,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB38112B1A6D510F00B45532 /* Main.storyboard in Resources */,
 				AB3811301A6D510F00B45532 /* LaunchScreen.xib in Resources */,
 				AB38112D1A6D510F00B45532 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB3811331A6D510F00B45532 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,33 +171,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB3811311A6D510F00B45532 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB38113C1A6D510F00B45532 /* SupinfoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		AB3811371A6D510F00B45532 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB38111B1A6D510F00B45532 /* Supinfo */;
-			targetProxy = AB3811361A6D510F00B45532 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		AB3811291A6D510F00B45532 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB38112A1A6D510F00B45532 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AB38112E1A6D510F00B45532 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,40 +281,6 @@
 			};
 			name = Release;
 		};
-		AB3811431A6D510F00B45532 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SupinfoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Supinfo.app/Supinfo";
-			};
-			name = Debug;
-		};
-		AB3811441A6D510F00B45532 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SupinfoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Supinfo.app/Supinfo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +298,6 @@
 			buildConfigurations = (
 				AB3811401A6D510F00B45532 /* Debug */,
 				AB3811411A6D510F00B45532 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		AB3811421A6D510F00B45532 /* Build configuration list for PBXNativeTarget "SupinfoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB3811431A6D510F00B45532 /* Debug */,
-				AB3811441A6D510F00B45532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
