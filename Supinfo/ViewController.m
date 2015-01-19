@@ -14,14 +14,19 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 30)];
+    
+    label.center = self.view.center;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.text = @"Hello world!";
+    
+    [self.view addSubview:label];
 }
 
 @end
