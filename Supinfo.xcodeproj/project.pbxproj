@@ -12,6 +12,7 @@
 		AB3811281A6D510F00B45532 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811271A6D510F00B45532 /* ViewController.m */; };
 		AB38112D1A6D510F00B45532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB38112C1A6D510F00B45532 /* Images.xcassets */; };
 		AB3811301A6D510F00B45532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB38112E1A6D510F00B45532 /* LaunchScreen.xib */; };
+		AB3811471A6D5A0D00B45532 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811461A6D5A0D00B45532 /* CounterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,8 @@
 		AB3811271A6D510F00B45532 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AB38112C1A6D510F00B45532 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB38112F1A6D510F00B45532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AB38113A1A6D510F00B45532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB38113B1A6D510F00B45532 /* SupinfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupinfoTests.m; sourceTree = "<group>"; };
+		AB3811451A6D5A0D00B45532 /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		AB3811461A6D5A0D00B45532 /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				AB38111E1A6D510F00B45532 /* Supinfo */,
-				AB3811381A6D510F00B45532 /* SupinfoTests */,
 				AB38111D1A6D510F00B45532 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +63,8 @@
 				AB3811241A6D510F00B45532 /* AppDelegate.m */,
 				AB3811261A6D510F00B45532 /* ViewController.h */,
 				AB3811271A6D510F00B45532 /* ViewController.m */,
+				AB3811451A6D5A0D00B45532 /* CounterViewController.h */,
+				AB3811461A6D5A0D00B45532 /* CounterViewController.m */,
 				AB38112C1A6D510F00B45532 /* Images.xcassets */,
 				AB38112E1A6D510F00B45532 /* LaunchScreen.xib */,
 				AB38111F1A6D510F00B45532 /* Supporting Files */,
@@ -75,23 +77,6 @@
 			children = (
 				AB3811201A6D510F00B45532 /* Info.plist */,
 				AB3811211A6D510F00B45532 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AB3811381A6D510F00B45532 /* SupinfoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB38113B1A6D510F00B45532 /* SupinfoTests.m */,
-				AB3811391A6D510F00B45532 /* Supporting Files */,
-			);
-			path = SupinfoTests;
-			sourceTree = "<group>";
-		};
-		AB3811391A6D510F00B45532 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB38113A1A6D510F00B45532 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3811281A6D510F00B45532 /* ViewController.m in Sources */,
+				AB3811471A6D5A0D00B45532 /* CounterViewController.m in Sources */,
 				AB3811251A6D510F00B45532 /* AppDelegate.m in Sources */,
 				AB3811221A6D510F00B45532 /* main.m in Sources */,
 			);
