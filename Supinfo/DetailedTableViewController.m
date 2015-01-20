@@ -80,13 +80,21 @@
         
         if(!cell){
             cell = [[SliderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+            
+            [((SliderCell *)cell).slider addTarget:self action:@selector(didSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
         }
         
         // Attention on utilise titleLabel et non textLabel
         ((SliderCell *)cell).titleLabel.text = @"SliderCell";
+        ((SliderCell *)cell).slider.value = self.item.value;
     }
     
     return cell;
+}
+
+- (void)didSliderValueChanged:(UISlider *)slider
+{
+    self.item.value = slider.value;
 }
 
 @end

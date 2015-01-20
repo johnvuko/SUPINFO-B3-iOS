@@ -18,7 +18,7 @@
     }
     
     {
-        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, CGRectGetWidth(self.contentView.frame) - 10, 30)];
+        self->_titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, CGRectGetWidth(self.contentView.frame) - 10, 30)];
         [self.contentView addSubview:self.titleLabel];
     }
     
@@ -28,10 +28,10 @@
         CGFloat y = 40;
         CGFloat height = 30;
 
-        UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(x, y, width, height)];
-        [self.contentView addSubview:slider];
+        self->_slider = [[UISlider alloc] initWithFrame:CGRectMake(x, y, width, height)];
+        [self.contentView addSubview:self.slider];
         
-        [slider addTarget:self action:@selector(didSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+        [self.slider addTarget:self action:@selector(didSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     }
     
     {

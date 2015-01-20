@@ -10,6 +10,8 @@
 
 #import "DetailedTableViewController.h"
 
+#import "FooItem.h"
+
 @interface WelcomeTableViewController (){
     NSArray *items;
 }
@@ -25,11 +27,11 @@
     self.title = @"Welcome screen";
     
     items = @[
-              @"Text 1",
-              @"Text 2",
-              @"Text 3",
-              @"Text 4",
-              @"Text 5"
+              [[FooItem alloc] initWithTitle:@"Text 1" andValue:0],
+              [[FooItem alloc] initWithTitle:@"Text 2" andValue:0],
+              [[FooItem alloc] initWithTitle:@"Text 3" andValue:0],
+              [[FooItem alloc] initWithTitle:@"Text 4" andValue:0],
+              [[FooItem alloc] initWithTitle:@"Text 5" andValue:0]
               ];
 }
 
@@ -47,9 +49,10 @@
     
     if(!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    cell.textLabel.text = items[indexPath.row];
+    cell.textLabel.text = [items[indexPath.row] title];
     
     return cell;
 }
@@ -57,6 +60,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailedTableViewController *controller = [DetailedTableViewController new];
+    controller.item = items[indexPath.row];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

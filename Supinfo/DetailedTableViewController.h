@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "FooItem.h"
+
 @interface DetailedTableViewController : UITableViewController
+
+@property (nonatomic, weak) FooItem *item;
 
 @end

@@ -12,6 +12,6 @@
     UILabel *sliderLabel;
 }
 
-@property (nonatomic) UILabel *titleLabel;
-
+@property (nonatomic, readonly) UILabel *titleLabel;
+@property (nonatomic, readonly) UISlider *slider;
 @end
