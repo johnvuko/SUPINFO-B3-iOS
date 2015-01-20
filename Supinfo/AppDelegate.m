@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "NumberedViewController.h"
+#import "PresentingViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +21,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    
-    NumberedViewController *controller = [NumberedViewController new];
-    controller.number = 0;
-    
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-    self.window.rootViewController = navController;
+
+    self.window.rootViewController = [PresentingViewController new];
     
     return YES;
 }
