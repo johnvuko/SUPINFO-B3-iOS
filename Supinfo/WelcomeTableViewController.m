@@ -8,6 +8,8 @@
 
 #import "WelcomeTableViewController.h"
 
+#import "DetailedTableViewController.h"
+
 @interface WelcomeTableViewController (){
     NSArray *items;
 }
@@ -50,6 +52,12 @@
     cell.textLabel.text = items[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailedTableViewController *controller = [DetailedTableViewController new];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end
