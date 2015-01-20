@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "CounterViewController.h"
+#import "NumberedViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [CounterViewController new];
+    NumberedViewController *controller = [NumberedViewController new];
+    controller.number = 0;
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    self.window.rootViewController = navController;
     
     return YES;
 }

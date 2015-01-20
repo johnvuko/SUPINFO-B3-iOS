@@ -13,6 +13,7 @@
 		AB38112D1A6D510F00B45532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB38112C1A6D510F00B45532 /* Images.xcassets */; };
 		AB3811301A6D510F00B45532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB38112E1A6D510F00B45532 /* LaunchScreen.xib */; };
 		AB3811471A6D5A0D00B45532 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811461A6D5A0D00B45532 /* CounterViewController.m */; };
+		AB38114A1A6E514300B45532 /* NumberedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3811491A6E514300B45532 /* NumberedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		AB38112F1A6D510F00B45532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AB3811451A6D5A0D00B45532 /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
 		AB3811461A6D5A0D00B45532 /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		AB3811481A6E514300B45532 /* NumberedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberedViewController.h; sourceTree = "<group>"; };
+		AB3811491A6E514300B45532 /* NumberedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				AB3811271A6D510F00B45532 /* ViewController.m */,
 				AB3811451A6D5A0D00B45532 /* CounterViewController.h */,
 				AB3811461A6D5A0D00B45532 /* CounterViewController.m */,
+				AB3811481A6E514300B45532 /* NumberedViewController.h */,
+				AB3811491A6E514300B45532 /* NumberedViewController.m */,
 				AB38112C1A6D510F00B45532 /* Images.xcassets */,
 				AB38112E1A6D510F00B45532 /* LaunchScreen.xib */,
 				AB38111F1A6D510F00B45532 /* Supporting Files */,
@@ -152,6 +157,7 @@
 			files = (
 				AB3811281A6D510F00B45532 /* ViewController.m in Sources */,
 				AB3811471A6D5A0D00B45532 /* CounterViewController.m in Sources */,
+				AB38114A1A6E514300B45532 /* NumberedViewController.m in Sources */,
 				AB3811251A6D510F00B45532 /* AppDelegate.m in Sources */,
 				AB3811221A6D510F00B45532 /* main.m in Sources */,
 			);
@@ -286,6 +292,7 @@
 				AB3811411A6D510F00B45532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
