@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
+        
     slots = @[
              [UIImage imageNamed:@"slot-plum"],
              [UIImage imageNamed:@"slot-seven"],

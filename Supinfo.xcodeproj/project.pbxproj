@@ -19,6 +19,8 @@
 		AB6F40431A6E634800DFF80A /* PresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6F40421A6E634800DFF80A /* PresentingViewController.m */; };
 		AB6F40461A6E831F00DFF80A /* SlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6F40451A6E831F00DFF80A /* SlotViewController.m */; };
 		AB6F40491A6E913800DFF80A /* WelcomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6F40481A6E913800DFF80A /* WelcomeTableViewController.m */; };
+		AB6F404C1A6E93C100DFF80A /* DetailedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6F404B1A6E93C100DFF80A /* DetailedTableViewController.m */; };
+		AB6F404F1A6E962700DFF80A /* SliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6F404E1A6E962700DFF80A /* SliderCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,10 @@
 		AB6F40451A6E831F00DFF80A /* SlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlotViewController.m; sourceTree = "<group>"; };
 		AB6F40471A6E913800DFF80A /* WelcomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeTableViewController.h; sourceTree = "<group>"; };
 		AB6F40481A6E913800DFF80A /* WelcomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeTableViewController.m; sourceTree = "<group>"; };
+		AB6F404A1A6E93C100DFF80A /* DetailedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedTableViewController.h; sourceTree = "<group>"; };
+		AB6F404B1A6E93C100DFF80A /* DetailedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedTableViewController.m; sourceTree = "<group>"; };
+		AB6F404D1A6E962700DFF80A /* SliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderCell.h; sourceTree = "<group>"; };
+		AB6F404E1A6E962700DFF80A /* SliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				AB6F40451A6E831F00DFF80A /* SlotViewController.m */,
 				AB6F40471A6E913800DFF80A /* WelcomeTableViewController.h */,
 				AB6F40481A6E913800DFF80A /* WelcomeTableViewController.m */,
+				AB6F404A1A6E93C100DFF80A /* DetailedTableViewController.h */,
+				AB6F404B1A6E93C100DFF80A /* DetailedTableViewController.m */,
+				AB6F404D1A6E962700DFF80A /* SliderCell.h */,
+				AB6F404E1A6E962700DFF80A /* SliderCell.m */,
 				AB38112C1A6D510F00B45532 /* Images.xcassets */,
 				AB38112E1A6D510F00B45532 /* LaunchScreen.xib */,
 				AB38111F1A6D510F00B45532 /* Supporting Files */,
@@ -187,8 +197,10 @@
 				AB6F40461A6E831F00DFF80A /* SlotViewController.m in Sources */,
 				AB38114A1A6E514300B45532 /* NumberedViewController.m in Sources */,
 				AB3811251A6D510F00B45532 /* AppDelegate.m in Sources */,
+				AB6F404C1A6E93C100DFF80A /* DetailedTableViewController.m in Sources */,
 				AB3811221A6D510F00B45532 /* main.m in Sources */,
 				AB6F40491A6E913800DFF80A /* WelcomeTableViewController.m in Sources */,
+				AB6F404F1A6E962700DFF80A /* SliderCell.m in Sources */,
 				AB38114D1A6E5BF500B45532 /* LabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

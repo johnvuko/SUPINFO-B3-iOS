@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "WelcomeTableViewController.h"
+#import "DetailedTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
 
-    WelcomeTableViewController *controller = [WelcomeTableViewController new];
+    DetailedTableViewController *controller = [DetailedTableViewController new];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
     
     self.window.rootViewController = navController;
